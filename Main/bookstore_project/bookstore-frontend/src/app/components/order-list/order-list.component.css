@@ -1,0 +1,108 @@
+h2 {
+  text-align: center;
+  color: #2e3a59;
+  font-size: 26px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.removal-message,
+.success-message {
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.removal-message {
+  background-color: #ffe0e0;
+  color: #c62828;
+}
+
+.success-message {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+li {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e3a59;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+li button {
+  align-self: flex-start;
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #e53935;
+}
+
+p {
+  font-size: 15px;
+  color: #2e3a59;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #2e3a59;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 10px 10px 0 0;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3c4a6b;
+}
+
+.place-order-button {
+  background-color: #00796b;
+}
+
+.place-order-button:hover {
+  background-color: #00695c;
+}
+
+div[ng-reflect-ng-if="true"]:not(.success-message):not(.removal-message) {
+  text-align: center;
+  font-style: italic;
+  color: #607d8b;
+  margin-top: 20px;
+}

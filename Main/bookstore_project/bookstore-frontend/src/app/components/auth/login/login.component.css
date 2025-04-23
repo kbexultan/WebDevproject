@@ -1,0 +1,96 @@
+
+body {
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0d47a1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+  width: 320px;
+}
+
+
+h2 {
+  text-align: center;
+  color: #2e3a59;
+  margin-bottom: 20px;
+}
+
+
+div[ngIf] {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2e3a59;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #81d4fa;
+  border-radius: 8px;
+  background-color: #f1faff;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3c4a6b;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e3a59;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #3c4a6b;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0d47a1;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+

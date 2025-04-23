@@ -1,0 +1,22 @@
+<div class="homepage">
+    <h1>Welcome to Our Online Bookstore!</h1>
+  
+    <section class="project-info">
+      <h2>About Our Website</h2>
+      <p>{{ projectInfo }}</p>
+      <h3>Key Features Include:</h3>
+      <ul>
+        <li *ngFor="let feature of websiteFeatures">{{ feature }}</li>
+      </ul>
+    </section>
+  
+    <section class="creators-info">
+      <h2>Our Team</h2>
+      <p>{{ creatorsInfo }}</p>
+      <div class="creator" *ngFor="let creator of creators">
+        <h3>{{ creator.name }}</h3>
+        <p>{{ creator.contribution }}</p>
+      </div>
+    </section>
+  </div>
+  

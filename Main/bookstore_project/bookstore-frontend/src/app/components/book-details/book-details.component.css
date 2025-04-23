@@ -1,0 +1,75 @@
+.details-container {
+  max-width: 620px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  font-family: 'Helvetica Neue', system-ui, sans-serif;
+  color: #2e3a59;
+}
+
+.details-container h2 {
+  text-align: center;
+  color: #2e3a59;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.error-message {
+  background-color: #ffe0e0;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.book-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-card h3 {
+  margin-top: 0;
+  color: #2e3a59;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.book-card p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #555;
+  font-size: 15px;
+}
+
+.book-card button {
+  background-color: #2e3a59;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #3c4a6b;
+}
+
+.loading-message {
+  text-align: center;
+  color: #607d8b;
+  font-style: italic;
+  margin-top: 20px;
+}

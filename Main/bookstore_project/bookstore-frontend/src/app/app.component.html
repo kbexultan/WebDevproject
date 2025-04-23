@@ -1,0 +1,22 @@
+<nav>
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+  <a routerLink="/books" routerLinkActive="active">Books</a>
+
+  <ng-container *ngIf="isAuthenticated$ | async">
+    <a routerLink="/orders" routerLinkActive="active">Cart</a>
+    <a routerLink="/order-history" routerLinkActive="active">Order History</a> </ng-container>
+
+  <ng-container *ngIf="!(isAuthenticated$ | async)">
+    <span>Log in to view your cart.</span>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
+    <a routerLink="/register" routerLinkActive="active">Register</a>
+  </ng-container>
+
+  <ng-container *ngIf="isAuthenticated$ | async">
+    <button (click)="logout()">Logout</button>
+  </ng-container>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
